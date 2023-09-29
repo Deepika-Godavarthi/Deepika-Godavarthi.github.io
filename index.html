@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/432db8e04e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+            <img src="Images/DEEPIKA GODAVARTHI.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#accomplishments">Accomplishments</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>    
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi,  I'm <span>Deepika</span> <br> Godavarthi From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------about------------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Deepika photo.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello there! I'm Deepika, a passionate and aspiring graduate eager to make my mark in the world. 
+                    As a recent graduate and a lifelong learner, I'm on a journey to explore, grow, and contribute to the 
+                    ever-evolving landscape of knowledge and innovation. I believe that learning is a lifelong adventure, 
+                    and I am committed to continuous self-improvement. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul class="skills-list">
+                            <li><span>Selenium Automation</span><br>Automation Testing With Python</li>
+                            <li><span>Robot Framework</span><br>Test Automation Framework</li>
+                            <li><span>SoapUI, REST API'S</span><br>Testing Tools/Design of web-based services</li>
+                            <li><span>Java, Python, C#.NET</span><br>Programming</li>
+                            <li><span>HTML, CSS, JavaScript</span><br>Front-End Web Development</li>
+                            <li><span>MySQL</span><br>Database</li>
+                            <li><span>Git, Jira Tool</span><br>Software Development/Project Management tools</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span style="font-size: medium;">Automation Test Engineer - Nokia</span> <span style = "font-size : 12px;"><b><span>(Sept 2022 - Jun 2023)</span></b></span></li>
+                            <li><span style="font-size: small; color: #ababab;">I worked extensively in the field of automation testing, leveraging Python as my primary tool. My experience spans across various aspects of automation, including creating, supporting, and maintaining automation scripts.
+
+                                During my tenure at Nokia, I successfully collaborated within a team environment, contributing to the team's objectives by writing test cases for user stories and sharing my automation expertise with fellow team members. My active participation in team meetings allowed me to provide valuable insights and ideas, fostering an environment of continuous improvement.
+                                
+                                In addition to my hands-on automation experience, I am proficient in utilizing tools such as Git for version control, Jira for issue tracking, and CI pipelines for seamless integration and deployment.</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span style="font-size: medium;">Vellore Institute Of Technology - VITAP</span> <span style = "font-size : 12px;"><b><span>(2018-2023)</span></b></span></li>
+                            <li><span style="font-size: medium; color: #ababab;">Integrated M.Tech in Software Engineering</span></li>
+                            <li><span style="font-size: medium; color: #ababab;">CGPA - 8.73</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------Accomplishments--------------------------------------->
+
+    <div id="accomplishments">
+        <div class="container">
+            <h1 class="sub-title">Accomplishments</h1>
+            <div class="accomplishments-list">
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h2>Projects</h2>
+                    <ul>
+                        <li>Skin Cancer Detection using Deep Learning</li>
+                        <li>E Learning System</li>
+                        <li>Flight Management System</li>
+                        <a href="#">Learn more</a>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <h2>Interests</h2>
+                    <ul>
+                        <li>Baking</li>
+                        <li>Yoga Enthusiast</li>
+                        <li>Cooking</li>
+                        <a href="#">Learn more</a>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fa-solid fa-award"></i>
+                    <h2>Achievements</h2>
+                    <ul>
+                        <li>Participated in a Bharatanatyam stage performance and achieved 2nd prize for the outstanding presentation.</li>
+                        <li>Member of the Computer Society of India (CSI) Club; part of the team that secured 3rd prize in a Figma competition. </li>
+                        <a href="#">Learn more</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------Portfolio--------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/skin.jpg">
+                    <div class="layer">
+                        <h3>Skin Cancer Detection</h3>
+                        <p>Developed a web application using streamlit package to predict the skin cancer by 
+                            uploading an image with an aim to help doctors and patients with an accuracy of 89%.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/E-Learning.jpg">
+                    <div class="layer">
+                        <h3>E-Learning System</h3>
+                        <p>Developed a website to enhance the quality of learning to meet the learning style or needs of students. 
+                            Built using HTML, CSS, JavaScript, PHP and MySQL.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/flight.jpg">
+                    <div class="layer">
+                        <h3>Flight Management System</h3>
+                        <p>Developed a project entirely using Java Programming which helps in managing the information such as flight booking
+                            , passenger reservation, booking enquiry etc.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-------------------------contact------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>deepikagodavarthi2001@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8500546517</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sai-mani-deepika-godavarthi/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="Images/DEEPIKA GODAVARTHI.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Deepika. <i class="fa-solid fa-heart"></i> All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzJo0oMeyz5Wq__2xKvDWWJmTwuTUai0QZLCp_KF1ODq0zHKVl1AEE5iPrmnQo0KDk/exec'
+        const form = document.forms['submit-to-google-sheet']
+        
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)                     /*after 5sec msg will be removed */
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
